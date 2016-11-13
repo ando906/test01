@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*共通*/
+body{
+	margin:0;
+	font-family:"メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	background-image:url(images/swirl_pattern.png);
+}
+
+#wrapper{
+	width:1200px;
+	height:2400px;
+	margin:0 auto;
+	background-color:rgb(255,218,45);
+	box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.2);
+}
+
+a{
+	text-decoration:none;
+}
+
+/*header*/
+#header{
+	position: relative; top: 0px; z-index: 100;
+}
+
+.img_head{
+	margin:0;
+}
+
+.logo{
+	position:absolute;
+	top:10px;
+	left:54px;
+}
+	
+.nav{
+	position:absolute;
+	top:6px;
+	right:30px;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.nav li:hover {
+	animation: bounce 1s;
+}
+	
+ul{
+	list-style-type:none;
+	display:inline-block;
+}
+	
+.nav li{
+	display:inline-block;
+	margin:8px;
+}
+	
+/*main*/
+#main{
+    position: absolute;
+    top: 145px;
+}
+
+
+.main_kihou{
+	position: relative; top: 0px; z-index: 100;
+}
+	
+.main_copy{
+	position:relative;
+    top: -450px;
+	left: 72px;
+    font-size: 36px;
+    line-height: 64px;
+	font-weight:bold;
+	-webkit-writing-mode: vertical-rl; /* 実装済 */
+	-moz-writing-mode: vertical-rl; /* 未実装 */
+	-ms-writing-mode: tb-rl; /* 実装済 */
+	writing-mode: vertical-rl;
+}
+
+.main_ph_mask{
+    height: 0;
+    width: 1200px;
+}
+
+.main_ph_mask img {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    left: 52px;
+    margin: -100px 0 0 0;
+    position: relative;
+    top: -820px;
+    width: 95%;
+}
+	
+.enoshima {
+    left: 40px;
+    position: absolute;
+    top: 466px;
+}
+
+/*sub*/
+#sub{
+	width:1200px;
+    height: 1696px;
+	background-image:url(images/sub_bk.png);
+	position: relative;
+    top: 406px;
+	z-index: 2;
+}
+	
+.sub {
+    margin: 0 80px;
+    position: relative;
+    top: 60px;
+}
+
+.sub_left{
+	float:left;
+	padding:20px 0;
+    height: 348px;
+}
+
+.sub_right {
+    float: right;
+    height: 348px;
+    margin-right: -16px;
+    padding: 20px 0;
+}
+
+.new_no{
+	font-size:18px;
+	font-weight:bold;
+	font-style:italic;
+	color:#fff;
+	background-color:rgb(255,144,0);
+	width:56px;
+	line-height:22px;
+	text-align:center;
+	margin:0;
+}
+
+h1 {
+    color: #666666;
+    font-size: 46px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 46px;
+    margin: 4px 0 0;
+}
+
+.more {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.more a:link {/*未訪問のリンク*/
+    color:rgb(255, 144, 0);
+    font-style:normal;
+}
+
+.more a:visited {/*訪問後のリンク*/
+    color:rgb(255, 144, 0);
+}
+
+.more a:hover {/*マウスをのせたとき*/
+    color:#ff0000;
+    font-style:normal;
+}
+	
+.sub_text{
+	width:432px;
+	height:100px;
+	margin:0;;
+}
+
+.sub_ph{
+	margin-left:492px;
+}
+
+.sub_beer{
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.sub_beer li{
+	display:inline-block;
+	margin:4px 14px 0 0;
+}
+
+hr{
+	color:#acacac;
+	size:4;
+    margin: -18px 0 20px;
+}
+
+/** footer **/
+#footer {
+    clear: both;
+    position: relative;
+    top: 385px;
+}
+
+#footer p {
+    background-color: rgb(255, 218, 45);
+    padding: 4px;
+    text-align: center;
+}
+
+
+
+
+
+
+/** shops **/
+.shops_main_bk {
+    left: 790px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.shops_main_copy {
+    left: 831px;
+    position: relative;
+    top: -483px;
+    z-index: 3;
+	width:322px;
+}
+
+.shops_main_copy h1 {
+    font-size: 48px;
+	font-weight: bold;
+	line-height: 64px;
+	font-style: italic;	
+	color: #666666;
+    font-weight: bold;
+	margin-top: 44px;
+}
+
+.shops_main_copy h2 {
+    font-size: 16px;
+	margin:2px 0;
+}
+
+.shops_main_copy p {
+    font-size: 14px;
+	margin:10px 0;
+}
+
+.shops_main_ph{
+    position: absolute;
+    top: 0px;
+}
+
+.main_beer{
+    margin-top: 0;
+    padding-left: 0;
+    position: absolute;
+    top: 266px;
+}
+
+.main_beer li{
+	display:inline-block;
+    margin: 0 -31px 0 0;
+}
+
+.main_beer img {
+    width: 76%;
+}
+
